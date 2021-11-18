@@ -36,8 +36,8 @@ Responsive en surface plain
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-OnePlus website 
-https://www.oneplus.com/nl/
+OnePlus website <br>
+https://www.oneplus.com/nl/ <br>
 https://www.oneplus.com/nl/nord-2-5g
 
 #### Screenshot(s) van de eerste pagina (small screen): 
