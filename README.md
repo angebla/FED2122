@@ -36,7 +36,9 @@ Responsive en surface plain
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+OnePlus website 
+https://www.oneplus.com/nl/
+https://www.oneplus.com/nl/nord-2-5g
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 #### Homepagina 
