@@ -60,16 +60,7 @@ https://www.oneplus.com/nl/nord-2-5g
 ### de hele pagina: 
 <img src="images/breakdownschets.png" width="375px" alt="breakdown van de hele pagina">
 
-### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
 </details>
-
-
-
 
 
 ## Voortgang 1 (week 2)
