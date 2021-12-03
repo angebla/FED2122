@@ -12,14 +12,37 @@
 }
 
 body{
-  font-family: "One Plus Sans", sans-serif
+  font-family: "One Plus Sans", sans-serif;
+  
+  width:10000px;
+}
+header{
+  display:flex;
+  justify-content:space-between;
+  background-color:black;
+}
+
+svg{
+  padding:0.3em;
+}
+
+svg:first-of-type, svg:nth-of-type(3) {
+  width:2em;
+}
+
+svg:nth-of-type(2){
+  width:8em;
 }
 
 main{
   background-color:black;
 }
 
-a{
+path{
+  fill:white;
+}
+
+a {
   text-decoration:none;
   color:white;
 }
@@ -29,32 +52,183 @@ a:visited{
   color:white;
 }
 
-section:first-of-type > ul:first-of-type > li:first-of-type {
-  background-image:url("../images/carrousel1_afbeelding1.jpeg");
-  background-size:cover;
-  height:50vh;
-  background-position:95%;
+ul{
+  list-style: none;
 }
 
-section:first-of-type > ul:first-of-type > li:first-of-type > a:first-of-type{
+/* carousel */
+main > section:first-of-type{
+  position:relative;
+  height:50vh;
+}
+main section:first-of-type li{
+  background-size:cover;
+  background-position:center;
+  height:50vh;
+  position:absolute;
+  width:100vw;
+}
+
+main section:first-of-type li:first-of-type {
+  background-image:url("../images/carrousel1_afbeelding1.jpeg");
+  z-index:5;
+  animation: caroussel-item1 1s linear 5s;
+}
+
+main section:first-of-type li:nth-of-type(2) {
+  background-image:url("../images/carrousel1_afbeelding2.jpeg"); 
+  z-index:4;
+  
+}
+
+main section:first-of-type li:nth-of-type(3) {
+  background-image:url("../images/carrousel1_afbeelding3.jpeg");
+  z-index:3;
+}
+main section:first-of-type li:nth-of-type(4) {
+  background-image:url("../images/carrousel1_afbeelding4.jpeg");
+  z-index:2;
+
+}
+
+main section:first-of-type li:nth-of-type(5) {
+  background-image:url("../images/carrousel1_afbeelding5.jpeg");
+  z-index:1;
+}
+
+main section:first-of-type li > a{
   display:flex;
   flex-direction:column;
   justify-content:flex-end;
   height:inherit;
+  padding:0.5em;
 
 }
 
-section:first-of-type > ul:nth-of-type(2){
+main section:first-of-type > ul p:last-of-type{
+  text-decoration: underline;
+}
+
+@keyframes caroussel-item1{
+  0%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity:0;
+  }
+}
+
+/* lijst van producten */
+section:nth-of-type(2) > ul:first-of-type{
   display:flex;
+  margin:1em;
 }
 
-section:first-of-type > ul:nth-of-type(3){
+section:nth-of-type(2)> ul:first-of-type a {
   display:flex;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 
+section:nth-of-type(2) > ul:first-of-type h2{
+  font-size:15px;
+  text-align:center;
+}
+
+section:nth-of-type(2) > ul:first-of-type img{
+  width: 70%;
+}
+
+/* producten in tiles */
+main section:nth-of-type(2) > ul:nth-of-type(2){
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5em;
+}
+
+main section:nth-of-type(2) > ul:nth-of-type(2) li{
+  background-size:cover;
+  background-position:center;
+}
+
+main > section:nth-of-type(2) ul a{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  height:inherit;
+  padding:0.5em;
+}
+
+main section:nth-of-type(2) > ul:nth-of-type(2) li:first-of-type{
+  background-image: url("../images/tile_oneplusstore.jpeg");
+  height:30vh;
+}
+
+/* tweede carrousel */
+
+main section:nth-of-type(2) > ul:nth-of-type(2) li:nth-of-type(2){
+  order:-1;
+  grid-column:1/-1;
+}
+
+main section:nth-of-type(2) > ul:nth-of-type(2) li:nth-of-type(2) ul{
+  display:flex;
+
+}
+
+
+main section:nth-of-type(2) > ul:nth-of-type(2) li:nth-of-type(2) ul li:first-of-type{
+  background-image: url("../images/carrousel2_earbuds.jpeg");
+  width:100vw;
+}
+
+main section:nth-of-type(2) > ul:nth-of-type(2) li:nth-of-type(2) ul li:nth-of-type(2){
+  background-image: url("../images/carrousel2_oneplus9.jpeg");
+  width:100vw;
+
+}
+
+main section:nth-of-type(2) > ul:nth-of-type(2) li:nth-of-type(3){
+  background-image: url("../images/tile_watch.jpeg");
+  height:30vh;
+}
+
+main section:nth-of-type(2) > ul:nth-of-type(2) li:nth-of-type(4){
+  background-image: url("../images/tile_nord5g.jpeg");
+  height:30vh;
+}
+
+main section:nth-of-type(2) > ul:nth-of-type(2) li:nth-of-type(5){
+  background-image: url("../images/tile_nordce.jpeg");
+  height:30vh;
+}
+
+section section{
+  background-image: url("../images/oneplus9pro.jpeg");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 30vh;
+  margin: 1em 0em;
+}
+
+
+/* quotes caroussel */
 main > ul:first-of-type{
   display:flex;
 }
+
+main > ul:first-of-type li{
+  width:100vw;
+}
+
+
+
+
+
 
 .hide{
   display:none;
