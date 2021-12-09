@@ -204,8 +204,10 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. <a href="https://stackoverflow.com/questions/6195329/how-can-you-hide-the-arrow-that-is-displayed-by-default-on-the-html5-details-e">Het pijltje verstoppen bij de details tag</a>
+2. <a href="https://stackoverflow.com/questions/38213329/how-to-add-css3-transition-with-html5-details-summary-tag-reveal">Animatie bij het laten verschijnen van de lijst in de details tag</a>
+3. <a href="https://stackoverflow.com/questions/48093367/how-to-calculate-new-keyframe-percentages-in-a-css3-slider
+">Handige manier om de tijd te calculeren in percentages voor keyframe animatie</a>
+4. <a href="https://codepen.io/robertspier/pen/eYGNqzp?editors=1100">Carrousel-animatie met dank aan Robert</a>
 
 </details>
