@@ -135,30 +135,30 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
-Lijst met je bevindingen die in de test naar voren kwamen:
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Geen focusstate 
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Sommige onderdelen hebben geen focusstate
 
-
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Dit kan opgelost worden door een focusstate in CSS toe te voegen.
 
 
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Tekst is niet te lezen
+Als je typt in het tekstveld kan je de tekst niet lezen
+ 
+Dit kan opgelost worden door de tekst een andere kleur te geven.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+
+#### De footer
+De focus state in de footer is heel groot
+ 
+Dit kan opgelost worden door de padding te verkleinen
 
 
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Social media knoppen 
+De social media knoppen hebben een extra vierkant bij de focusstate
+ 
+Ik weet nog niet helemaal hoe ik dat ga oplossen 
 
 </details>
 
