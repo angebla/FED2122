@@ -152,21 +152,16 @@ Ik weet nog niet helemaal hoe ik dat ga oplossen
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik heb veel gewerkt aan animaties en mijn eerste pagina is zo goed als af. Ik heb deze week veel uren gemaakt!
 
+<img src="images/versie3.png" width="375px" alt="screenshot van de tweede versie van de webpagina">
+<img src="images/code3.png" width="375px" alt="screenshot van code">
 
 ### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
+ - Hoe verbeter ik de focus state op de social media buttons?
+ - Heb ik genoeg gedaan voor de surface plane? 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
 
 - punt 1
 - punt 2
