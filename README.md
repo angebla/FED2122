@@ -69,26 +69,14 @@ https://www.oneplus.com/nl/nord-2-5g
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+De Html is nu helemaal af. Het was lastig om te bedenken hoe ik onderdelen moest groeperen maar het was wel gelukt. <br>
 
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
+<img src="images/versie1.png" width="375px" alt="screenshot van de eerste versie van de webpagina">
+<img src="images/code1.png" width="375px" alt="screenshot van code">
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Ik heb vaak H1 gebruikt in mijn HTML. Je mag dit maar 1x doen. Ik moet dit dus naar H2 veranderen
+- Ik had niet alle a-tags ingevuld. Ik moet de href nog invullen. 
 
 </details>
 
