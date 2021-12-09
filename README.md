@@ -145,19 +145,19 @@ Dit kan opgelost worden door een focusstate in CSS toe te voegen.
 
 #### Tekst is niet te lezen
 Als je typt in het tekstveld kan je de tekst niet lezen
- 
+<img src="images/tekstveld.png" width="375px" alt="screenshot van een tekstveld">
 Dit kan opgelost worden door de tekst een andere kleur te geven.
 
 
 #### De footer
 De focus state in de footer is heel groot
- 
+<img src="images/footer.png" width="375px" alt="screenshot van een footer">
 Dit kan opgelost worden door de padding te verkleinen
 
 
 #### Social media knoppen 
 De social media knoppen hebben een extra vierkant bij de focusstate
- 
+<img src="images/social.png" width="375px" alt="screenshot van een social media knop">
 Ik weet nog niet helemaal hoe ik dat ga oplossen 
 
 </details>
