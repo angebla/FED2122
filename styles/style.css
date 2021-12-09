@@ -6,6 +6,13 @@
   
 }
 
+:root{
+  --hoofdKleur:white;
+  --footerTekstKleur:black;
+  --Achtergrond:black;
+
+}
+
 @font-face{
   font-family: "One Plus Sans";
   src: url("../fonts/OnePlusSans-Light.ttf");
@@ -13,43 +20,75 @@
 
 body{
   font-family: "One Plus Sans", sans-serif;
-  
-  width:10000px;
+ 
 }
+
 header{
   display:flex;
   justify-content:space-between;
-  background-color:black;
+  background-color:var(--Achtergrond);
+  padding:0.5em;
 }
 
-svg{
+header svg{
   padding:0.3em;
 }
 
-svg:first-of-type, svg:nth-of-type(3) {
+header svg:first-of-type, header svg:nth-of-type(3) {
   width:2em;
 }
 
-svg:nth-of-type(2){
+header svg:nth-of-type(2){
   width:8em;
 }
 
+nav{
+  background-color: var(--hoofdKleur);
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  z-index:6;
+  transform:translateY(-100%);
+	transition:.5s;
+  overflow-y:auto;
+}
+
+nav.navigatie{
+transform:translateY(0%);
+}
+
+nav > img{
+  width:1em;
+  margin:1em;
+}
+
+nav > a{
+  cursor: pointer;
+  list-style: none;
+  padding: 1em;
+  border-top: 1px solid #cccccc;
+  font-weight:bold;
+  padding-bottom:1em;
+  display:block;
+}
+
 main{
-  background-color:black;
+  background-color:var(--Achtergrond);
+  color:var(--hoofdKleur);
 }
 
 path{
-  fill:white;
+  fill:var(--hoofdKleur);
 }
 
 a {
   text-decoration:none;
-  color:white;
 }
 
-a:visited{
-  text-decoration:none;
-  color:white;
+main a:visited{
+  color:white
 }
 
 ul{
@@ -60,6 +99,7 @@ ul{
 main > section:first-of-type{
   position:relative;
   height:50vh;
+
 }
 main section:first-of-type li{
   background-size:cover;
@@ -72,28 +112,32 @@ main section:first-of-type li{
 main section:first-of-type li:first-of-type {
   background-image:url("../images/carrousel1_afbeelding1.jpeg");
   z-index:5;
-  animation: caroussel-item1 1s linear 5s;
+  animation: fadeOut 25s linear 5s infinite;
 }
 
 main section:first-of-type li:nth-of-type(2) {
   background-image:url("../images/carrousel1_afbeelding2.jpeg"); 
   z-index:4;
+  animation: fadeOut 25s linear 10s infinite;
   
 }
 
 main section:first-of-type li:nth-of-type(3) {
   background-image:url("../images/carrousel1_afbeelding3.jpeg");
   z-index:3;
+  animation: fadeOut 25s linear 15s infinite;
 }
 main section:first-of-type li:nth-of-type(4) {
   background-image:url("../images/carrousel1_afbeelding4.jpeg");
   z-index:2;
+  animation: fadeOut 25s linear 20s infinite;
 
 }
 
 main section:first-of-type li:nth-of-type(5) {
   background-image:url("../images/carrousel1_afbeelding5.jpeg");
   z-index:1;
+  animation: fadeOut 25s linear 25s infinite;
 }
 
 main section:first-of-type li > a{
@@ -105,17 +149,29 @@ main section:first-of-type li > a{
 
 }
 
-main section:first-of-type > ul p:last-of-type{
+main section:first-of-type > ul p:last-of-type, main section:nth-of-type(2) > ul:nth-of-type(2) li:nth-of-type(2) section p:last-of-type, main > section > section a, main > ul:first-of-type a{
   text-decoration: underline;
 }
 
-@keyframes caroussel-item1{
+@keyframes fadeOut{
   0%{
     opacity: 1;
   }
 
-  100%{
+  6.25%{
     opacity:0;
+  }
+
+  46.11%{
+    opacity:0;
+  }
+
+  99%{
+    opacity:1;
+  }
+
+  100%{
+    opacity:1;
   }
 }
 
@@ -145,66 +201,143 @@ main section:nth-of-type(2) > ul:nth-of-type(2){
   display:grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 0.5em;
+  font-size:0.8em;
 }
 
-main section:nth-of-type(2) > ul:nth-of-type(2) li{
-  background-size:cover;
-  background-position:center;
-}
-
-main > section:nth-of-type(2) ul a{
+main > section:nth-of-type(2) ul:nth-of-type(2) a{
   display:flex;
   flex-direction:column;
   justify-content:flex-end;
   height:inherit;
-  padding:0.5em;
+  padding:1em;
+  background-size:100%;
+  background-position:center;
+  transition: background-size 0.5s;
+  height: 30vh;
 }
 
-main section:nth-of-type(2) > ul:nth-of-type(2) li:first-of-type{
+main > section:nth-of-type(2) ul a:hover{
+  background-size:120%;
+  transition: background-size 0.5s;
+}
+
+main section:nth-of-type(2) > ul:nth-of-type(2) li:first-of-type a{
   background-image: url("../images/tile_oneplusstore.jpeg");
-  height:30vh;
+
 }
 
 /* tweede carrousel */
 
 main section:nth-of-type(2) > ul:nth-of-type(2) li:nth-of-type(2){
   order:-1;
-  grid-column:1/-1;
+  grid-column: 1 / -1;
 }
 
-main section:nth-of-type(2) > ul:nth-of-type(2) li:nth-of-type(2) ul{
+main section:nth-of-type(2) > ul:nth-of-type(2) li:nth-of-type(2) section{
+  display:grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  overflow-x: hidden;
+}
+
+main section:nth-of-type(2) > ul:nth-of-type(2) li:nth-of-type(2) section a{
+  width:100vw;
+  animation: scroll 22s ease-in-out infinite;
+  animation-fill-mode: forwards;
   display:flex;
-
+  align-items:center;
+  justify-content:flex-start;
 }
 
-
-main section:nth-of-type(2) > ul:nth-of-type(2) li:nth-of-type(2) ul li:first-of-type{
+main section:nth-of-type(2) > ul:nth-of-type(2) li:nth-of-type(2) section a:first-of-type{
   background-image: url("../images/carrousel2_earbuds.jpeg");
-  width:100vw;
+  
+
 }
 
-main section:nth-of-type(2) > ul:nth-of-type(2) li:nth-of-type(2) ul li:nth-of-type(2){
+main section:nth-of-type(2) > ul:nth-of-type(2) li:nth-of-type(2) section a:last-of-type{
   background-image: url("../images/carrousel2_oneplus9.jpeg");
-  width:100vw;
+  
+}
+
+@keyframes scroll{
+  45.45%, 100%{
+   transform: translateX(0%);
+  }
+
+  50%, 95.45%{
+   transform: translateX(-100%);
+
+  }
+}
+
+main ul div{
+  position:absolute;
+  right: 10px;
+  bottom: 0px;
+}
+
+main ul svg{
+  width: 2em;
+  cursor:pointer;
 
 }
 
-main section:nth-of-type(2) > ul:nth-of-type(2) li:nth-of-type(3){
+main ul svg:first-of-type line{
+  stroke: white;
+  animation: carrousel-indicator1 22s ease-in-out infinite;
+}
+
+main ul svg:last-of-type line{
+  transform: translateX(-70%);
+  stroke:grey;
+  animation: carrousel-indicator2 22s ease-in-out infinite;
+}
+
+@keyframes carrousel-indicator1{
+  45.45%, 100%{
+    transform: translateX(0%);
+    stroke:white;
+   }
+ 
+   50%, 94.45%{
+    transform: translateX(70%);
+    stroke:grey;
+   }
+ 
+}
+
+@keyframes carrousel-indicator2{
+  45.45%, 100%{
+    transform: translateX(-70%);
+    stroke:grey;
+ 
+   }
+ 
+   50%, 95.45%{
+    transform: translateX(0%);
+    stroke:white;
+ 
+   }
+
+}
+
+main section:nth-of-type(2) > ul:nth-of-type(2) li:nth-of-type(3) a {
   background-image: url("../images/tile_watch.jpeg");
-  height:30vh;
+
 }
 
-main section:nth-of-type(2) > ul:nth-of-type(2) li:nth-of-type(4){
+main section:nth-of-type(2) > ul:nth-of-type(2) li:nth-of-type(4) a{
   background-image: url("../images/tile_nord5g.jpeg");
-  height:30vh;
 }
 
-main section:nth-of-type(2) > ul:nth-of-type(2) li:nth-of-type(5){
+main section:nth-of-type(2) > ul:nth-of-type(2) li:nth-of-type(5) a{
   background-image: url("../images/tile_nordce.jpeg");
-  height:30vh;
+
 }
 
-section section{
+
+main > section > section{
   background-image: url("../images/oneplus9pro.jpeg");
   background-size:cover;
   background-position:center;
@@ -213,23 +346,345 @@ section section{
   justify-content: flex-end;
   height: 30vh;
   margin: 1em 0em;
+  padding:1em;
 }
-
 
 /* quotes caroussel */
 main > ul:first-of-type{
-  display:flex;
+  display:grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow-x: hide;
 }
 
-main > ul:first-of-type li{
+main > ul:first-of-type > li{
   width:100vw;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:center;
+  animation: quotesScroll 18s ease-in-out infinite;
 }
 
+main > ul:first-of-type img{
+  margin: 2em;
+}
 
+main > ul:first-of-type > li:first-of-type img, main > ul:first-of-type > li:last-of-type img {
+  width:15em;
+}
 
+blockquote{
+  width:20em;
+  text-align:center;
+  padding:1em;
+}
 
+main > div{
+  display:flex;
+  justify-content: center;
+}
 
+main > div svg{
+  width: 2em;
+  margin: 3em 1em;
+}
 
-.hide{
-  display:none;
+main > div svg:first-of-type line{
+  stroke:white;
+  animation: quotesScrollIndicator1 18s ease-in-out infinite;
+}
+
+main > div svg:nth-of-type(2) line, main > div svg:last-of-type line {
+  stroke:grey;
+}
+
+@keyframes quotesScroll{
+  27.77%, 100%{
+    transform: translateX(0%);
+  }
+
+  33.33%, 61.11%{
+    transform: translateX(-100%);
+  }
+
+  66.66%, 94.44%{
+    transform: translateX(-200%);
+  }
+}
+
+@keyframes quotesScrollIndictor1{
+  27.77%, 100%{
+    stroke:white;
+  }
+
+  33.33%, 61.11%{
+    stroke:grey;
+  }
+}
+
+/* Tegels om te navigeren naar extra informatie */
+main > ul:last-of-type{
+  display:grid;
+  grid-gap:1em;
+}
+
+main > ul:last-of-type > li{
+  background-size:cover;
+  background-position:center;
+  height:30vh;
+}
+
+main > ul:last-of-type > li:first-of-type{
+  background-image: url("../images/lijst2_onderwijsprogramma.jpeg");
+}
+
+main > ul:last-of-type > li:nth-of-type(2){
+  background-image: url("../images/lijst2_referralprogram.jpeg");
+}
+
+main > ul:last-of-type > li:nth-of-type(3){
+  background-image: url("../images/lijst2_oxygenos.jpeg");
+}
+
+main > ul:last-of-type > li:last-of-type{
+  background-image: url("../images/lijst2_health.jpeg");
+}
+
+main > ul:last-of-type li{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1em;
+}
+
+/* nieuwsbrief */
+main > section:last-of-type{
+  background-image: url("../images/subscribe.jpeg");
+  background-size:cover;
+  background-position:center;
+  height:50vh;
+  text-align:center;
+  padding:5em;
+
+}
+
+fieldset{
+  border:none;
+}
+
+fieldset input{
+  background-color:var(--Achtergrond);
+  border: 1px solid grey;
+  padding: 0.5em;
+  font-size: 1em;
+  width:15em;
+  margin: 1em;
+  transition:0.5s;
+}
+
+form > input{
+  background-color:var(--Achtergrond);
+  color: white;
+  padding: 0.8em 1em;
+  margin:1em;
+  font-size: 1em;
+  border: 1px solid white;
+  border-radius:5px;
+  
+}
+
+input:hover{
+  border: 1px solid white;
+  transition:0.5s;
+}
+
+main > section:last-of-type a{
+  text-decoration:underline;
+}
+/*footer */
+
+footer a{
+  color:var(--footerTekstKleur);
+}
+footer a:visited, nav a:visited{
+  color:var(--footerTekstKleur);
+}
+
+/* accordion met navigatie */
+details a{
+  padding: 2em;
+  font-weight:bold;
+}
+
+details li{
+  padding: 0.5em;
+}
+
+details:last-of-type{
+  border-bottom:1px solid #cccccc;
+}
+
+summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 1em;
+  border-top: 1px solid #cccccc;
+  font-weight:bold;
+  display:flex;
+  justify-content:space-between;
+}
+
+summary span{
+    width:1.5em;
+    position:relative;
+}
+
+summary img{
+  width:1.1em;
+  position:absolute;
+  top:8px;
+}
+
+summary span > img:last-of-type{
+  transform:rotate(-90deg);
+  animation: plus .5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+details[open] img:last-of-type{
+  animation: minus .5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes minus {
+  0%    {
+    transform:rotate(-90deg);
+  }
+  100%  {
+    transform:rotate(0deg);
+}
+}
+
+@keyframes plus {
+  0%    {
+    transform:rotate(0deg);
+  }
+  100%  {
+    transform:rotate(-90deg);
+}
+}
+
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+  0%    {
+    opacity: 0; margin-top: -10px
+  }
+  100%  {
+    opacity: 1; margin-top: 0px
+  }
+}
+footer svg:last-of-type{
+  transform:rotate(90deg);
+}
+
+/*betaalingsmethodes*/
+
+footer > ul:first-of-type{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom:1px solid #cccccc;
+}
+
+footer ul img{
+  width:3em;
+  margin: 0.1em;
+  
+}
+
+/* contactgegevens */
+footer > a:first-of-type{
+  display:flex;
+  justify-content:center;
+  color: #44afd7;
+  font-weight: bold;
+  font-size:1.2em;
+  margin: 1.5em;
+}
+
+footer a:first-of-type img{
+  margin: 0em 0.5em;
+}
+
+footer > p:first-of-type{
+  text-align:center;
+  width:75%;
+  margin: auto;
+  padding-bottom: 2em;
+  border-bottom:1px solid #cccccc;
+}
+
+/* social media iconen */
+footer > ul:nth-of-type(2){
+  display:flex;
+  justify-content: center;
+  border-bottom:1px solid #cccccc;
+
+}
+footer > ul:nth-of-type(2) svg{
+  transform: rotate(0deg);
+  width: 1.5em;
+  margin: 1.5em;
+  
+}
+footer > ul:nth-of-type(2) path{
+  fill:#828282;
+}
+
+footer > ul:nth-of-type(2) a:hover path{
+  fill:black;
+}
+
+/* taalselectie */ 
+
+footer > a:last-of-type{
+  display:flex;
+  padding: 1em;
+  border-bottom:1px solid #cccccc;
+  background-color: #f9f9f9;
+}
+
+footer > a:last-of-type img{
+  width:2em;
+  margin: 0em 0.5em;
+}
+
+/* footer navigatie */
+
+footer > ul:last-of-type{
+  display:Flex;
+  flex-wrap: wrap;
+  margin:1em;
+
+}
+
+footer > ul:last-of-type a {
+  padding: 0.5em;
+  font-size: 0.8em;
+
+}
+
+footer > p:last-of-type{
+  color: grey;
+  font-size: 0.8em;
+  margin:1em;
+  padding: 0.5em;
+
+}
+
+footer > img {
+  padding-left: 1.5em;
+  padding-bottom: 1.5em;
 }
