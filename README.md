@@ -97,10 +97,9 @@ Ik had moeite om de SVG's goed in mijn HTML te krijgen. Gelukkig had Rowin mij d
 
 ### Agenda voor meeting
 - Hoe kan ik handig zo'n accordion maken die een lijstje laat verschijnen
-- Hoe kan ik een carrousel accordion maken 
+- Hoe kan ik een carrousel-animatie maken 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
 - Gebruik de details en summary tag om een accordion te maken
 - Robert had laten zien hoe je met keyframes een carrousel-animatie maakt. Dit had ie voor me gemaakt op <a href="https://codepen.io/robertspier/pen/eYGNqzp?editors=1100">codepen</a> :)
 
