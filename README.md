@@ -65,7 +65,7 @@ https://www.oneplus.com/nl/nord-2-5g
 
 ## Voortgang 1 (week 2)
 
-<details open>
+<details>
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
@@ -90,26 +90,19 @@ De Html is nu helemaal af. Het was lastig om te bedenken hoe ik onderdelen moest
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik had moeite om de SVG's goed in mijn HTML te krijgen. Gelukkig had Rowin mij daar goed mee geholpen!
 
+<img src="images/versie2.png" width="375px" alt="screenshot van de tweede versie van de webpagina">
+<img src="images/code2.png" width="375px" alt="screenshot van code">
 
 ### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
+- Hoe kan ik handig zo'n accordion maken die een lijstje laat verschijnen
+- Hoe kan ik een carrousel accordion maken 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Gebruik de details en summary tag om een accordion te maken
+- Robert had laten zien hoe je met keyframes een carrousel-animatie maakt. Dit had ie voor me gemaakt op <a href="https://codepen.io/robertspier/pen/eYGNqzp?editors=1100">codepen</a> :)
 
 </details>
 
