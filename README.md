@@ -159,8 +159,6 @@ Ik heb veel gewerkt aan animaties en mijn eerste pagina is zo goed als af. Ik he
 
 ### Agenda voor meeting
  - Hoe verbeter ik de focus state op de social media buttons?
- - Heb ik genoeg gedaan voor de surface plane? 
-
 ### Verslag van meeting
 
 - punt 1
