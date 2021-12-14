@@ -161,11 +161,7 @@ Ik heb veel gewerkt aan animaties en mijn eerste pagina is zo goed als af. Ik he
  - Hoe verbeter ik de focus state op de social media buttons?
 ### Verslag van meeting
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
-
+- Probeer de a tag een width mee te geven 
 </details>
 
 
@@ -183,7 +179,7 @@ Mijn site is eindelijk af! Het is me gelukt om de surface plane uit te werken en
 ### Screenshot(s)
 
 <img src="images/final.png" width="375px" alt="screenshot de eerste webpagina"> 
-<img src="images/final1.png" width="375px" alt="screenshot de tweede webpagina">
+<img src="images/final-1.png" width="375px" alt="screenshot de tweede webpagina">
 <img src="images/code4.png" width="375px" alt="screenshot van code">
 
 </details>
