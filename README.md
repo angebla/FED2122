@@ -154,7 +154,7 @@ Ik weet nog niet helemaal hoe ik dat ga oplossen
 ### Stand van zaken
 Ik heb veel gewerkt aan animaties en mijn eerste pagina is zo goed als af. Ik heb deze week veel uren gemaakt!
 
-<img src="images/versie3.png" width="375px" alt="screenshot van de tweede versie van de webpagina">
+<img src="images/versie3.png" width="375px" alt="screenshot van de derde versie van de webpagina">
 <img src="images/code3.png" width="375px" alt="screenshot van code">
 
 ### Agenda voor meeting
@@ -178,11 +178,13 @@ Ik heb veel gewerkt aan animaties en mijn eerste pagina is zo goed als af. Ik he
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Mijn site is eindelijk af! Het is me gelukt om de surface plane uit te werken en de home-pagina is ook responsive. Ik ben tijdens het maken van de site zeker tegen een aantal problemen gelopen, maar die waren goed op te lossen met hulp van de student-assistenten, docent en medestudenten!
 
 ### Screenshot(s)
 
-hier screenshot(s) van je eindresultaat
+<img src="images/final.png" width="375px" alt="screenshot de eerste webpagina"> 
+<img src="images/final1.png" width="375px" alt="screenshot de tweede webpagina">
+<img src="images/code4.png" width="375px" alt="screenshot van code">
 
 </details>
 
@@ -202,5 +204,14 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 3. <a href="https://stackoverflow.com/questions/48093367/how-to-calculate-new-keyframe-percentages-in-a-css3-slider
 ">Handige manier om de tijd te calculeren in percentages voor keyframe animatie</a>
 4. <a href="https://codepen.io/robertspier/pen/eYGNqzp?editors=1100">Carrousel-animatie met dank aan Robert</a>
+5. <a href="https://codepen.io/MPDoctor/pen/mpJdYe?editors=1100">Het maken van tabs met gebruik van radio buttons</a>
+ 
+6. <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_indicator">Het maken van een scroll-indicator</a>
+7. <a href="https://stackoverflow.com/questions/8572952/border-length-smaller-than-div-width">De border korter maken dan de content voor de scroll-indicator</a>
+8. <a href="https://davidwalsh.name/css-variables-javascript">Het aanpassen van een CSS variabele met javascript voor de scroll-indicator</a>
+
+9. <a href="https://www.w3schools.com/howto/howto_js_media_queries.asp">Een functie uitvoeren als de window size verandert</a>
+10. <a href="https://www.w3schools.com/jsref/prop_details_open.asp">Het openen van een details-tag met javascript</a>
+
 
 </details>
