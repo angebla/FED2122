@@ -926,7 +926,7 @@ section [type="radio"]:nth-of-type(4):checked ~ article:nth-of-type(4){
 }
 
 .redcable details{
-  width:90vw;
+  width:100vw;
 }
 
 @media (min-width:48em) {
