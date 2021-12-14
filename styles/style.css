@@ -908,6 +908,10 @@ section [type="radio"]:nth-of-type(4):checked ~ article:nth-of-type(4){
   padding: 0em 1em;
 }
 
+.redcable details{
+  width:90vw;
+}
+
 .redcable main > section:last-of-type{
   background-image:none;
   text-align: left;
