@@ -98,6 +98,7 @@ path{
 
 a {
   text-decoration:none;
+  color:var(--hoofdkleur);
 }
 
 main a:visited{
@@ -1131,6 +1132,14 @@ section [type="radio"]:nth-of-type(4):checked ~ article:nth-of-type(4){
     
   }
 
+  header:hover a{
+    color:black;
+  }
+
+  header:hover a:visited{
+    color:black;
+  }
+
   header > svg:first-of-type{
     display: none;
    
@@ -1165,6 +1174,10 @@ section [type="radio"]:nth-of-type(4):checked ~ article:nth-of-type(4){
     border-top: none;
     margin: 0em 1em;
     color:var(--hoofdKleur);
+  }
+
+  nav a:visited{
+    color:white;
   }
 
   nav img{
