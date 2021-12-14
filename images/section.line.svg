@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 901 900" style="enable-background:new 0 0 901 900;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_5_);}
+	.st1{opacity:0.5;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#E50113;}
+</style>
+<g>
+	<g>
+		<defs>
+			<polygon id="SVGID_1_" points="1,1 2,1 1,2 			"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+	</g>
+</g>
+<g>
+	<defs>
+		<polygon id="SVGID_3_" points="1,1 2,1 1,2 		"/>
+	</defs>
+	<defs>
+		<polygon id="SVGID_4_" points="-1,-1 -2,-1 -1,-2 		"/>
+	</defs>
+	<clipPath id="SVGID_5_">
+		<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+	</clipPath>
+	<clipPath id="SVGID_6_" class="st0">
+		<use xlink:href="#SVGID_4_"  style="overflow:visible;"/>
+	</clipPath>
+</g>
+<g id="kv-group-1" class="st1">
+	<g id="kv-group-11" transform="translate(0.000000, -180.000000)">
+		<g id="kv-group-111" transform="translate(0.000000, 180.000000)">
+			<path id="kv-fill-1" class="st2" d="M0.9,714c393.8,0,713-319.2,713-712.9c0-0.4,0-0.8,0-1.1h-93.3c0,0.4,0,0.7,0,1.1
+				c0,341.7-278,619.6-619.8,619.6L0.9,714L0.9,714z"/>
+		</g>
+		<g transform="translate(0.000000, 180.000000)">
+			<path id="kv-fill-12" class="st2" d="M0.9,900.9C497.4,900.9,900,498,900,1.1c0-0.4,0-0.8,0-1.1h-93.2c0,0.4,0,0.8,0,1.1
+				c0,444.7-361.6,806.5-806,806.5v93.3H0.9z"/>
+		</g>
+	</g>
+</g>
+</svg>

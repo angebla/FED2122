@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58.5" height="59.75" viewBox="0 0 58.5 59.75">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Mask" d="M5.249,59.75A5.154,5.154,0,0,1,0,54.71V8.638A5.152,5.152,0,0,1,5.249,3.6H12V0h4.5V3.6H42V0h4.5V3.6h6.75A5.155,5.155,0,0,1,58.5,8.638V54.71a5.157,5.157,0,0,1-5.251,5.041ZM4.5,54.71a.735.735,0,0,0,.748.72h48A.738.738,0,0,0,54,54.71V22.316H4.5ZM54,18V8.638a.736.736,0,0,0-.751-.718H46.5v3.6H42V7.92H16.5v3.6H12V7.92H5.249a.733.733,0,0,0-.748.718V18ZM46.5,48.231H30V32.394H46.5V48.231Zm-12-4.32H42v-7.2H34.5Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <path id="Mask-2" data-name="Mask" d="M5.249,59.75A5.154,5.154,0,0,1,0,54.71V8.638A5.152,5.152,0,0,1,5.249,3.6H12V0h4.5V3.6H42V0h4.5V3.6h6.75A5.155,5.155,0,0,1,58.5,8.638V54.71a5.157,5.157,0,0,1-5.251,5.041ZM4.5,54.71a.735.735,0,0,0,.748.72h48A.738.738,0,0,0,54,54.71V22.316H4.5ZM54,18V8.638a.736.736,0,0,0-.751-.718H46.5v3.6H42V7.92H16.5v3.6H12V7.92H5.249a.733.733,0,0,0-.748.718V18ZM46.5,48.231H30V32.394H46.5V48.231Zm-12-4.32H42v-7.2H34.5Z" fill="none"/>
+  <g clip-path="url(#clip-path)">
+    <g id="Icon_color" data-name="Icon color" transform="translate(-7.25 -4.5)">
+      <rect id="System_icon_Accent_Light_theme_-Active_background" data-name="System icon/Accent/Light theme -Active background" width="72" height="69" fill="none"/>
+      <rect id="Card" width="72" height="69" opacity="0.9"/>
+    </g>
+  </g>
+</svg>
